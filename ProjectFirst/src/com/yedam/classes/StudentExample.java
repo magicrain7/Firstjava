@@ -45,7 +45,7 @@ public class StudentExample {
 		// Hong , Park, Choi
 
 		for (Student stud : s1) {
-			if (stud.equals("choi")) {
+			if (stud.name.equals("choi")) {
 				System.out.println();
 
 				System.out.println(stud.name + "/ " + stud.age);

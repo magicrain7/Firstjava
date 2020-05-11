@@ -1,14 +1,14 @@
 package com.yedam.dev;
 
-class Student{
+class Student1{
 	String name;
 }
 
 public class StringEqualExample {
 
 	public static void main(String[] args) {
-		Student st1 = new Student();
-		Student st2 = new Student();
+		Student1 st1 = new Student1();
+		Student1 st2 = new Student1();
 		st1.name = "Hong";
 		st2.name = "partk";
 		

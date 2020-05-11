@@ -48,6 +48,7 @@ public class ArrayExample2 {
 	public static String getString(String str1, String str2) {
 		String result = str1 + " - " + str2;
 		return result;
+		
 	}
 
 	public static int getLargeValue(int[] ary) {
