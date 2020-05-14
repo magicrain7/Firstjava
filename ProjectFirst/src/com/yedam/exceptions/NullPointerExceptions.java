@@ -9,7 +9,7 @@ public class NullPointerExceptions {
 			Class.forName("java.lang.String2"); //String2를 찾아 있는지 확인
 		} catch (NullPointerException e) {
 			System.out.println("실행중 오류 발생.");
-		} catch (Exception e) {
+		} catch (Exception e) {  //최상위 예외 Exception
 			System.out.println("알수없는 예외발생");
 		}
 		
