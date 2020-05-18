@@ -20,10 +20,10 @@ public class MyCalendar {
 		int today = 1;
 		int lastDay = getLasTDay(year, month);
 		int dayOfWeek = getDayofWeek(year, month);
-		int a;
-		Calendar cal = Calendar.getInstance();
-		cal.set(2020, month, 1);
-		a = cal.get((Calendar.DAY_OF_WEEK));
+//		int a;
+//		Calendar cal = Calendar.getInstance();
+//		cal.set(2020, month, 1);
+
 		System.out.println("      [" + year + "년" + month + "월]");
 		String[] week = { "Sun", "Mon", "Tue", "Wed", "Thr", "Fri", "Sat" };
 		for (int i = 0; i < week.length; i++) {
@@ -47,13 +47,17 @@ public class MyCalendar {
 	public static int getDayofWeek(int year, int month) {
 		int dayOfWeek = 0;
 		// 일(1),월(2),화(3),수(4),목(5),금(6),토(7)
+//		Calendar cal = Calendar.getInstance();
+//		cal.set(year, month -1, 1);
+//		if (month == 5) {
+//			dayOfWeek = 6; // 금 :
+//		} else if (month == 6) {
+//			dayOfWeek = 2; // 월.
+//		}
 		Calendar cal = Calendar.getInstance();
-		cal.set(year, month -1, 1);
-		if (month == 5) {
-			dayOfWeek = 6; // 금 :
-		} else if (month == 6) {
-			dayOfWeek = 2; // 월.
-		}
+		cal.set(year, month - 1, 1);
+		dayOfWeek = cal.get(Calendar.DAY_OF_WEEK);
+		
 		return dayOfWeek;
 	}
 
