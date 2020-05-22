@@ -23,9 +23,16 @@ public class GenericExample {
 		String s2 = (String) list.get(1);
 		Double d1 = (Double) list.get(0);
 		
+		for (Object o : list) {
+			System.out.println(o.toString());
+			String result = (String) o;
+		}
+		
 		//제네릭. (타입을 미리지정)
 		List<String> strList = new ArrayList<String>();
 		strList.add(new String("Hellow"));
+//		strList.add(new Integer("Hellow")); (x)
+		
 		
 		List<Integer> intList = new ArrayList<Integer>();
 		intList.add(new Integer(10));
