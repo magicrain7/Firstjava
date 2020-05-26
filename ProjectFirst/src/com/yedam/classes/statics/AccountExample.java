@@ -38,7 +38,7 @@ public class AccountExample {
 						System.out.println(accounts[0].getAno());
 						break;
 					}
-				} //이거 좋다. 나는 시작부분에 변수 하나 선언해서 menu 1씩 더하려고 했는데.
+				} 
 			} else if (menu == 2) {
 				System.out.println("계좌목록 선택.");
 				//전체 배열중에 값이 있는 경우에만 출력(null제외)

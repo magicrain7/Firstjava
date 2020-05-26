@@ -12,7 +12,7 @@ public class MyCalendar {
 		System.out.println("월: " + cal.get((Calendar.MONTH)));
 		System.out.println("일: " + cal.get(Calendar.DAY_OF_MONTH));
 		System.out.println("요일: " + cal.get((Calendar.DAY_OF_WEEK)));
-		showCal(2020,6);
+		showCal(2020,5);
 	}
 
 	public static void showCal(int year, int month) {

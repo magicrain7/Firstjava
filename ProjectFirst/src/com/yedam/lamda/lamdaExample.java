@@ -43,6 +43,6 @@ public class lamdaExample {
 		};
 		int result = mi.multi(10,15);
 		System.out.println("결과값은: " + result);
-		
+
 	}
 }
