@@ -12,6 +12,7 @@ public class Code20200529 {
 		int ball = 0;
 
 		for (int i = 0; i < intAry.length; i++) {
+<<<<<<< HEAD
 			a[i] = (int) ((Math.random() * 9) + 1);
 			for (int j = 0; j < i; j++) {
 				if (a[i] == a[j]) {
@@ -41,5 +42,34 @@ public class Code20200529 {
 
 		}
 		System.out.println("Strike: " + strike + "  ball :" + ball);
+=======
+			a[i] = (int)((Math.random() * 9) + 1);
+			for (int j = 0; j < i; j++) {
+				if (a[i] == a[j]) {
+					i--;
+					break;
+				}
+			}
+			System.out.println("a숫자 : " + a[i]);
+		}
+		System.out.println();
+		Scanner scn = new Scanner(System.in);
+		System.out.println("1~9까지 숫자입력하세요");
+		for (int i = 0; i < intAry.length; i++) {
+			num = scn.nextInt();
+			b[i] = num;
+		}
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < b.length; j++) {
+				if (a[i] == b[j] && i == j) {
+					strike++;
+				} else if (a[i] == b[j] &&  i!=j) {
+					ball++;
+				}
+
+			}
+			System.out.println("Strike: " + strike + "  ball :" + ball);
+		}
+>>>>>>> branch 'master' of https://github.com/magicrain7/Firstjava.git
 	}
 }
